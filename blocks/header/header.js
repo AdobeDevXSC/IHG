@@ -151,6 +151,22 @@ async function buildBreadcrumbs() {
   return breadcrumbs;
 }
 
+// Function to change background color to blue
+function hideTopNav() {
+  const topNav =  document.querySelector('header .nav-top');
+  const headWrapper = document.querySelector('header .nav-wrapper');
+  topNav.classList.add('hide');
+  headWrapper.classList.add('scroll');
+}
+
+// Function to reset background color to original
+function resetTopNav() {
+  const topNav =  document.querySelector('header .nav-top');
+  const headWrapper = document.querySelector('header .nav-wrapper');
+  topNav.classList.remove('hide');
+  headWrapper.classList.remove('scroll');
+}
+
 /**
  * decorates the header, mainly the nav
  * @param {Element} block The header block element
@@ -178,6 +194,10 @@ export default async function decorate(block) {
     brandLink.className = '';
     brandLink.closest('.button-container').className = '';
   }
+
+  const aLink = navBrand.querySelector('a');
+  const brandImgLogoTitle = aLink.querySelector('img').getAttribute('data-icon-name');
+  aLink.title = brandImgLogoTitle;
 
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
@@ -211,7 +231,28 @@ export default async function decorate(block) {
   navWrapper.append(nav);
   block.append(navWrapper);
 
+  //rearrange html
+  const lastSection = navWrapper.querySelector('.section:last-of-type');
+  lastSection.className = 'nav-top';
+  navWrapper.prepend(lastSection);
+
   if (getMetadata('breadcrumbs').toLowerCase() === 'true') {
     navWrapper.append(await buildBreadcrumbs());
   }
 }
+
+  // Variable to track previous scroll position
+  let previousScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  // Event listener for scroll event
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > 60 && currentScroll > previousScroll) {
+      hideTopNav();
+    } else if (currentScroll <= 60 && currentScroll < previousScroll) {
+      resetTopNav();
+    }
+
+    previousScroll = currentScroll;
+  });

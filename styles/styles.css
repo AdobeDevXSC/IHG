@@ -49,6 +49,7 @@
 
   /* nav height */
   --nav-height: 64px;
+  --header-max-width: 1300px;
 }
 
 @font-face {
@@ -84,7 +85,13 @@ body.appear {
 }
 
 header {
-  height: var(--nav-height);
+  /* height: var(--nav-height); */
+}
+
+@media (width >= 900px) {
+  header {
+    height: 140px;
+  }
 }
 
 h1, h2, h3,
