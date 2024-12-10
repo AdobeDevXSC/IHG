@@ -3,8 +3,8 @@
 https://www.ihg.com/hotels/us/en/reservation
 
 ## Environments
-- Preview: https://main--ihg--adobedevxsc.hlx.page/
-- Live: https://main--ihg--adobedevxsc.hlx.live/
+- Preview: https://main--ihg--adobedevxsc.aem.page/
+- Live: https://main--ihg--adobedevxsc.aem.live/
 
 ## Installation
 
