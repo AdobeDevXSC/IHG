@@ -141,7 +141,7 @@ main pre {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -215,6 +215,10 @@ main .section .default-content-wrapper p {
 /* no outer padding for all columns block */
 main .section.columns-container {
   padding: 0;
+}
+
+main .section .columns-wrapper:last-of-type {
+  margin-top: 4rem;
 }
 
 @media (width >= 600px) {
