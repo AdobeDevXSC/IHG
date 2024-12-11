@@ -1,0 +1,57 @@
+.brands {
+  margin: 3rem 0;
+  padding: 0 15px;
+}
+
+.brands ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  gap: 2rem 1rem;
+  border: 1px solid #000;
+  padding: 3.5rem 2rem;
+  position: relative;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.brands ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brands ul li:first-of-type {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  background: #fff;
+  padding: 0 1rem;
+}
+
+.brands ul li:last-of-type {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  background: #fff;
+  padding: 0 1rem;
+}
+
+.brands ul li:not(:first-of-type, :last-of-type) img {
+  height: 60px;
+  width: 100px;
+  object-fit: contain;
+}
+
+@media (width <= 900px) {
+  .brands ul {
+    gap: 1rem 1rem;
+    justify-content: space-evenly;
+  }
+
+  .brands ul li:not(:first-of-type, :last-of-type) img {
+    height: 40px;
+    width: 80px;
+    object-fit: contain;
+  }
+}
