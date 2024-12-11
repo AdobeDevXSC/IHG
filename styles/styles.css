@@ -200,7 +200,7 @@ main img {
 
 /* sections */
 main .section {
-  padding: 32px;
+  padding: 15px;
   max-width: 1440px;
   margin: 0 auto;
   box-sizing: border-box;

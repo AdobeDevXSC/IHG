@@ -12,16 +12,36 @@
 }
 
 .cards .cards-card-body {
-	padding: 1.5rem 3rem;
+	padding: 1.5rem 2rem;
 	text-align: left;
 }
 
-.cards .cards-card-image {
-  line-height: 0;
+.cards .cards-card-body h4 {
+	font-size: 36px;
+	font-family: 'Graphik', roboto;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 1rem;
+}
+
+.cards .cards-card-body p {
+	line-height: 1.4;
 }
 
 .cards .cards-card-body > *:first-child {
   margin-top: 0;
+}
+
+.cards .cards-card-body a {
+	font-size: 16px;
+	padding: 0;
+	background-color: transparent;
+	color: #c7370f;
+	font-weight: bold;
+}
+
+.cards .cards-card-image {
+  line-height: 0;
 }
 
 .cards > ul > li img {
