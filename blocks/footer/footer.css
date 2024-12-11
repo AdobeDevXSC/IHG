@@ -57,10 +57,6 @@ footer .footer .section > div {
 /* second section */
  
 /* third section */
-.footer .section.links {
-  padding: 1.5rem 0 1rem;
-}
-
 .footer .section.links > div > ul {
   display: flex;
   flex-flow: row wrap;
