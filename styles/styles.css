@@ -27,7 +27,7 @@
   --mammoth-blue-hover: #00578E; /* need to update variable name */
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: Graphik, roboto, roboto-fallback;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
   --lenovo-font: lato, roboto-fallback; /* need to update variable name */
@@ -54,7 +54,7 @@
 }
 
 @font-face {
-  font-family: roboto-fallback;
+  font-family: Graphik, roboto-fallback;
   size-adjust: 100.06%;
   ascent-override: 95%;
   src: local('Arial');
@@ -72,7 +72,7 @@
 }
 
 body {
-  font-size: var(--body-font-size-m);
+  font-size: var(--body-font-size-s);
   margin: 0;
   font-family: var(--body-font-family);
   line-height: 1.6;
@@ -101,14 +101,14 @@ h4, h5, h6 {
   font-weight: 600;
   line-height: 1.25;
   margin-top: 1em;
-  margin-bottom: .5em;
+  margin-bottom: 1em;
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
 h1 { font-size: var(--heading-font-size-xxl) }
 h2 { font-size: var(--heading-font-size-xl) }
-h3 { font-size: var(--heading-font-size-l) }
-h4 { font-size: var(--heading-font-size-m) }
+h3 { font-size: var(--heading-font-size-l); padding: 2rem 0; }
+h4 { font-family: 'GraphikWide', 'Graphik'; font-size: 16px; }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
 
@@ -151,27 +151,22 @@ a:hover {
 
 /* buttons */
 a.button:any-link, button {
-  font-family: var(--body-font-family);
+  font-family: Graphik, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
+  background: #c7370f;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 2.2rem;
+  padding: 0.5rem 3rem;
   display: inline-block;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: 2px solid transparent;
-  padding: 5px 30px;
+  border: none;
   text-align: center;
-  font-style: normal;
-  font-weight: 600;
-  cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
-  margin: 16px 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border-radius: 30px;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--link-hover-color);
   cursor: pointer;
 }
 
@@ -211,6 +206,11 @@ main .section {
   box-sizing: border-box;
 }
 
+main .section .default-content-wrapper p {
+  max-width: 75%;
+  margin: 1.5rem auto;
+}
+
 @media (width >= 600px) {
   main .section {
     padding: 32px;
@@ -228,6 +228,10 @@ main .section {
 main .section.light,
 main .section.highlight {
   background-color: #F0EEED;
+}
+
+main .section.text-center {
+  text-align: center;
 }
 
 /* Experimentation Widget Styling */
