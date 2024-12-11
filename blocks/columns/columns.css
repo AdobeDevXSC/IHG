@@ -1,6 +1,7 @@
 .columns.block {
 	background-color: var(--secondary-color);
 	color: #fff;
+	text-align: left;
 }
 
 .columns > div {
@@ -116,11 +117,6 @@
 }
 
 /* quote variant styles */
-.section.columns-container.highlight {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
 .columns.quote > div > div {
 	width: 100%;
 }
@@ -190,13 +186,8 @@
 }
 
 @media (width <= 900px) {
-	.section.columns-container.highlight {
-		padding-top: 92px;
-		padding-bottom: 92px;
-	}
-
 	.columns > div {
-		gap: 30px;
+		gap: 10px;
 	}
 
 	.columns.quote > div > div:first-of-type {
