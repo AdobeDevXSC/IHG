@@ -205,12 +205,15 @@ main img {
 
 /* sections */
 main .section {
-  padding: 64px 16px;
+  padding: 32px;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 @media (width >= 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: 32px;
   }
 }
 
@@ -224,7 +227,7 @@ main .section {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
+  background-color: #F0EEED;
 }
 
 /* Experimentation Widget Styling */
