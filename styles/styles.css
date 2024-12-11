@@ -19,7 +19,8 @@
   --black: black;
   --white: white;
   --background-color: #fff;
-  --primary-red: #c7370f;
+  --primary-color: #c7370f;
+  --secondary-color: #1f4456;
 
   /* brand colors */
   --lenovo-red: #e1251b; /* need to update variable name */
@@ -209,6 +210,11 @@ main .section {
 main .section .default-content-wrapper p {
   max-width: 75%;
   margin: 1.5rem auto;
+}
+
+/* no outer padding for all columns block */
+main .section.columns-container {
+  padding: 0;
 }
 
 @media (width >= 600px) {

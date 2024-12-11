@@ -155,7 +155,7 @@ footer .footer .section > div {
 }
 
 .footer .section:last-of-type {
-  background-color: var(--primary-red);
+  background-color: var(--primary-color);
   color: #fff;
   font-size: 12px;
   text-align: left;

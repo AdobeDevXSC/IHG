@@ -1,3 +1,8 @@
+.columns.block {
+	background-color: var(--secondary-color);
+	color: #fff;
+}
+
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -19,6 +24,15 @@
   display: block;
 }
 
+.columns h3 {
+	padding: 0;
+	margin: 1.5rem 0;
+}
+
+.columns > div > div:not(.columns-img-col) {
+	padding: 1rem;
+}
+
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
@@ -31,10 +45,6 @@
     order: unset;
   }
 }
-
-
-
-
 
 /* quote variant styles */
 .section.columns-container.highlight {
