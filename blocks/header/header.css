@@ -194,6 +194,11 @@ header nav#nav .nav-sections ul > li > a {
   font-size: 16px;
 }
 
+header nav#nav .nav-sections ul > li > a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
 header nav#nav .nav-sections ul > li > ul {
   margin-top: 0;
 }
