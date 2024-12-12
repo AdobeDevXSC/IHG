@@ -108,7 +108,7 @@ h4, h5, h6 {
 
 h1 { font-size: var(--heading-font-size-xxl) }
 h2 { font-size: var(--heading-font-size-xl) }
-h3 { font-size: var(--heading-font-size-l); padding: 2rem 0; }
+h3 { font-size: var(--heading-font-size-l); padding-top: 1rem;}
 h4 { font-family: 'GraphikWide', 'Graphik'; font-size: 16px; }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
