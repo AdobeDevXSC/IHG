@@ -109,6 +109,15 @@
   color: #fff;
 }
 
+.columns.offset ul:last-of-type li:last-of-type a {
+  color: #fff;
+	text-decoration: underline;
+}
+
+.columns.offset ul:last-of-type li:last-of-type a:hover {
+  color: var(--primary-color);
+}
+
 @media (width >= 900px) {
   .columns.offset ul:last-of-type {
 		gap: 8rem;

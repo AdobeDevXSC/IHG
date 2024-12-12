@@ -130,7 +130,8 @@ footer .footer .section > div {
 }
 
 .footer .section.redirect > div > ul > li:last-of-type a {
-  color: #d96930;
+  color: #000;
+  font-weight: bold;
 }
 
 .footer .section.redirect > div > ul > li:last-of-type img {
